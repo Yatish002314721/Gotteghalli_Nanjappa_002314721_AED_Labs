@@ -167,7 +167,7 @@ public class ManageAccountsJPanel extends javax.swing.JPanel {
 
     private void btnViewDetailsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewDetailsActionPerformed
         int selectedRow = tblAccounts.getSelectedRow();
-        if(selectedRow > 0){
+        if(selectedRow >= 0){
             Account selectedAccount = (Account) tblAccounts.getValueAt(selectedRow, 0);
             ViewAccountJPanel panel = new ViewAccountJPanel(userProcessContainer, accountDirectory, selectedAccount);
             userProcessContainer.add("ViewAccountPanel",panel);
