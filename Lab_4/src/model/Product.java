@@ -83,4 +83,9 @@ public class Product {
         features.add(newFeature);
         return newFeature;
     }
+    
+    @Override
+    public String toString() {
+        return name;
+    }
 }
